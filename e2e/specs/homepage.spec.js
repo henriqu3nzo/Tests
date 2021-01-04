@@ -3,7 +3,7 @@ describe('Homepage', function(){
         browser.get('#/api');
 
         element(by.model('searchTerm')).sendKeys('restart');
-        //element(by.css('.depth-1')).click();
+        element(by.css('.depth-1')).click();
 
         expect(element(by.css('.api-title')).getText()).toContain('browser.restart');
     });
